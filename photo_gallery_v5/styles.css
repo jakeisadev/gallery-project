@@ -28,3 +28,37 @@ input {
 input:placeholder {
   font-size: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  input {
+    max-width: 400px;
+  }
+
+  .input-div {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container a {
+    width: 47%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: auto;
+    max-width: 1350px;
+  }
+
+  .container a {
+    width: 23%;
+    text-align: center;
+  }
+}

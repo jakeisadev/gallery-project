@@ -1,32 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../lightbox2-2.11.3/dist/css/lightbox.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Gallery Project</title>
-  </head>
-  <body>
-      <input type="text" placeholder="Search">
-      <div class="container">
-        <a href="photos/01.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/01.jpg" alt="photo1"></a>
-        <a href="photos/02.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/02.jpg" alt="photo2"></a>
-        <a href="photos/03.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/03.jpg" alt="photo3"></a>
-        <a href="photos/04.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/04.jpg" alt="photo4"></a>
-        <a href="photos/05.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/05.jpg" alt="photo5"></a>
-        <a href="photos/06.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/06.jpg" alt="photo6"></a>
-        <a href="photos/07.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/07.jpg" alt="photo7"></a>
-        <a href="photos/08.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/08.jpg" alt="photo8"></a>
-        <a href="photos/09.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/09.jpg" alt="photo9"></a>
-        <a href="photos/10.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/10.jpg" alt="photo10"></a>
-        <a href="photos/11.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/11.jpg" alt="photo11"></a>
-        <a href="photos/12.jpg" data-lightbox="roadtrip"><img src="photos/thumbnails/12.jpg" alt="photo12"></a>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="../lightbox2-2.11.3/dist/css/lightbox.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Gallery Project</title>
+   </head>
+   <body>
+      <div class="input-div">
+         <input id="search" type="text" placeholder="Search">
       </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.js" integrity="sha512-UHlZzRsMRK/ENyZqAJSmp/EwG8K/1X/SzErVgPc0c9pFyhUwUQmoKeEvv9X0uNw8x46FxgIJqlD2opSoH5fjug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <script src="../lightbox2-2.11.3/dist/js/lightbox.js"></script>
+      <div class="container">
+         <a href="photos/01.jpg" data-lightbox="roadtrip" data-title="
+            01.jpg
+            Hay Bales -
+            I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+         <img src="photos/thumbnails/01.jpg" alt="Hay Bales"></a>
+         <a href="photos/02.jpg" data-lightbox="roadtrip" data-title="
+            02.jpg
+            Lake -
+            The lake was so calm today. We had a great view of the snow on the mountains from here.">
+         <img src="photos/thumbnails/02.jpg" alt="Lake"></a>
+         <a href="photos/03.jpg" data-lightbox="roadtrip" data-title="
+            03.jpg
+            Canyon -
+            I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+         <img src="photos/thumbnails/03.jpg" alt="Canyon"></a>
+         <a href="photos/04.jpg" data-lightbox="roadtrip" data-title="
+            04.jpg
+            Iceberg -
+            It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+         <img src="photos/thumbnails/04.jpg" alt="Iceberg"></a>
+         <a href="photos/05.jpg" data-lightbox="roadtrip" data-title="
+            05.jpg
+            Desert -
+            The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+         <img src="photos/thumbnails/05.jpg" alt="Desert"></a>
+         <a href="photos/06.jpg" data-lightbox="roadtrip" data-title="
+            06.jpg
+            Fall -
+            Fall is coming, I love when the leaves on the trees start to change color.">
+         <img src="photos/thumbnails/06.jpg" alt="Fall"></a>
+         <a href="photos/07.jpg" data-lightbox="roadtrip" data-title="
+            07.jpg
+            Plantation -
+            I drove past this plantation yesterday, everything is so green!">
+         <img src="photos/thumbnails/07.jpg" alt="Plantation"></a>
+         <a href="photos/08.jpg" data-lightbox="roadtrip" data-title="
+            08.jpg
+            Dunes -
+            My summer vacation to the Oregon Coast. I love the sandy dunes!">
+         <img src="photos/thumbnails/08.jpg" alt="Dunes"></a>
+         <a href="photos/09.jpg" data-lightbox="roadtrip" data-title="
+            09.jpg
+            Countryside Lane -
+            We enjoyed a quiet stroll down this countryside lane. ">
+         <img src="photos/thumbnails/09.jpg" alt="Countryside Lane"></a>
+         <a href="photos/10.jpg" data-lightbox="roadtrip" data-title="
+            10.jpg
+            Sunset -
+            Sunset at the coast! The sky turned a lovely shade of orange.">
+         <img src="photos/thumbnails/10.jpg" alt="Sunset"></a>
+         <a href="photos/11.jpg" data-lightbox="roadtrip" data-title="
+            11.jpg
+            Cave -
+            I did a tour of a cave today and the view of the landscape below was breathtaking.">
+         <img src="photos/thumbnails/11.jpg" alt="Cave"></a>
+         <a href="photos/12.jpg" data-lightbox="roadtrip" data-title="
+            12.jpg
+            Bluebells -
+            I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+         <img src="photos/thumbnails/12.jpg" alt="Bluebells"></a>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="../lightbox2-2.11.3/dist/js/lightbox.js"></script>
+      <script src="../photo_gallery_v5/js/app.js">
+
+      </script>
+   </body>
 </html>
