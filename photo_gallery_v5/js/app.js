@@ -6,7 +6,7 @@ searchBox.addEventListener("keyup", (event) => {
     if(searchBox.value.lenth == 0) {
         pictures[i].style.display = "inline";
     }
-    else if(pictures[i].dataset.title.includes(searchBox.value)) {
+    else if(pictures[i].dataset.title.includes(searchBox.value.toLowerCase())) {
       pictures[i].style.display = "inline";
     } else {
       pictures[i].style.display = "none";
