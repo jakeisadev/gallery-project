@@ -13,10 +13,6 @@ body.lb-disable-scrolling {
   display: none;
 }
 
-* {
-  background-color: red;
-}
-
 .lightbox {
   position: absolute;
   left: 0;
