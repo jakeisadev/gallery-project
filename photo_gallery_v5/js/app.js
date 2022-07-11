@@ -1,3 +1,7 @@
+// baguetteBox.run('.container', {
+//     captions:true
+// });
+
 let searchBox = document.querySelector('#search');
 let pictures = document.querySelectorAll('a');
 
