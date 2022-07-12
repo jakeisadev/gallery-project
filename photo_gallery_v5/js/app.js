@@ -1,6 +1,6 @@
-// baguetteBox.run('.container', {
-//     captions:true
-// });
+baguetteBox.run('.gallery', {
+    captions:true
+});
 
 let searchBox = document.querySelector('#search');
 let pictures = document.querySelectorAll('a');
@@ -10,7 +10,7 @@ searchBox.addEventListener("keyup", (event) => {
     if(searchBox.value.lenth == 0) {
         pictures[i].style.display = "inline";
     }
-    else if(pictures[i].dataset.title.includes(searchBox.value.toLowerCase())) {
+    else if(pictures[i].dataset.caption.includes(searchBox.value.toLowerCase())) {
       pictures[i].style.display = "inline";
     } else {
       pictures[i].style.display = "none";

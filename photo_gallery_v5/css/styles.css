@@ -6,12 +6,15 @@ body {
   padding: 25px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.gallery {
+  display: grid;
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
 }
 
-.container img {
+.gallery img {
   height: auto;
   width: 100%;
   margin-bottom: 25px;
@@ -27,38 +30,4 @@ input {
 
 input::placeholder {
   font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  input {
-    max-width: 400px;
-  }
-
-  .input-div {
-    text-align: center;
-  }
-
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .container a {
-    width: 47%;
-    text-align: center;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    margin: auto;
-    max-width: 1350px;
-  }
-
-  .container a {
-    width: 23%;
-    text-align: center;
-  }
 }
